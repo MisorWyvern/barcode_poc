@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'dashboard_page.dart';
+import 'main_page.dart';
 
 class SplashScreenPage extends StatefulWidget {
   @override
@@ -13,13 +13,13 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   void initState() {
     super.initState();
 
-    // Future.delayed(Duration(seconds: 3)).then(
-    //   (_) => Navigator.of(context).pushReplacement(
-    //     MaterialPageRoute(
-    //       builder: (_) => DashboardPage(),
-    //     ),
-    //   ),
-    // );
+    Future.delayed(Duration(seconds: 3)).then(
+      (_) => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => MainPage(),
+        ),
+      ),
+    );
   }
 
   @override

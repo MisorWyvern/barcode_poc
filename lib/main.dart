@@ -1,5 +1,5 @@
 import 'package:barcode_poc/models/theme.dart';
-import 'package:barcode_poc/pages/splash_screen_page.dart';
+import 'package:barcode_poc/pages/main_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class BarcodePOC extends StatelessWidget {
     return MaterialApp(
       title: 'Barcode POC',
       theme: theme,
-      home: SplashScreenPage(),
+      home: MainPage(),
     );
   }
 }
