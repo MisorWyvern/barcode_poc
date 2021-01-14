@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class MainBottomNavigationBar extends StatefulWidget {
+  final PageController pageController;
+
+  const MainBottomNavigationBar({Key key, @required this.pageController})
+      : super(key: key);
   @override
   _MainBottomNavigationBarState createState() =>
       _MainBottomNavigationBarState();
@@ -13,6 +17,7 @@ class _MainBottomNavigationBarState extends State<MainBottomNavigationBar> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      widget.pageController.jumpToPage(index);
     });
   }
 

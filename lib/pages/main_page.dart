@@ -11,6 +11,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  final pageController = PageController();
   final List<Widget> _widgetOptions = [
     DashboardPage(),
     BCScanPage(),
@@ -19,22 +20,18 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       appBar: AppBar(
         title: Text("Barcode POC"),
         centerTitle: true,
       ),
-      bottomNavigationBar: MainBottomNavigationBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
-          child: Container(
-            width: _width,
-            child: _widgetOptions[1],
-          ),
-        ),
+      bottomNavigationBar: MainBottomNavigationBar(
+        pageController: pageController,
+      ),
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: pageController,
+        children: _widgetOptions,
       ),
     );
   }
