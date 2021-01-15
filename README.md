@@ -4,7 +4,8 @@ Uma POC para escanear códigos de barras.
 A POC for scanning barcodes.
 
 ## Screenshots
-![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png =100x)
+<img src="https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png" alt="SplashScreen Page" width="100"/>
+![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png)
 ![ML Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot3.png)
 ![BC Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot2.png)
 ![Dashboard Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot1.png)
