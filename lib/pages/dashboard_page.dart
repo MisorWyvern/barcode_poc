@@ -1,4 +1,4 @@
-import 'package:barcode_poc/widgets/padding_bodytext.dart';
+import 'package:barcode_poc/widgets/padded_bodytext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,7 +15,7 @@ class DashboardPage extends StatelessWidget {
               "Bem Vindo!",
               style: _theme.textTheme.headline2,
             ),
-            PaddingBodyText(
+            PaddedBodyText(
                 text:
                     "Escolha entre as opções do menu abaixo para testar as funcionalidades."),
             Divider(),
@@ -23,7 +23,7 @@ class DashboardPage extends StatelessWidget {
               "assets/icons/barcode-scan.svg",
               color: _theme.textTheme.bodyText1.color,
             ),
-            PaddingBodyText(
+            PaddedBodyText(
                 text: "Clique no botão \"BC Scan\" para testar a lib:"),
             Text(
               "\"https://pub.dev/packages/flutter_barcode_scanner\"",
@@ -34,7 +34,7 @@ class DashboardPage extends StatelessWidget {
               "assets/icons/barcode-scan.svg",
               color: _theme.textTheme.bodyText1.color,
             ),
-            PaddingBodyText(
+            PaddedBodyText(
                 text: "Clique no botão \"ML Scan\" para testar a lib:"),
             Text(
               "\"https://github.com/FirebaseExtended/flutterfire/tree/master/packages/firebase_ml_vision",

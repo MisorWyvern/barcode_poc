@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class PaddingBodyText extends StatelessWidget {
+class PaddedBodyText extends StatelessWidget {
   final String text;
 
-  const PaddingBodyText({this.text}) : assert(text != null);
+  const PaddedBodyText({this.text}) : assert(text != null);
   @override
   Widget build(BuildContext context) {
     return Padding(

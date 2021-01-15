@@ -1,4 +1,6 @@
-import 'package:barcode_poc/widgets/padding_bodytext.dart';
+import 'package:barcode_poc/widgets/custom_raised_button.dart';
+import 'package:barcode_poc/widgets/icon_button_label.dart';
+import 'package:barcode_poc/widgets/padded_bodytext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
@@ -9,6 +11,7 @@ class BCScanPage extends StatefulWidget {
 
 class _BCScanPageState extends State<BCScanPage> {
   String result = "";
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,31 +19,29 @@ class _BCScanPageState extends State<BCScanPage> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            PaddingBodyText(
+            Text(
+              "flutter_barcode_scanner:\n^1.0.2",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline3,
+            ),
+            Divider(),
+            PaddedBodyText(
                 text:
-                    "Both scans read QR and Barcode. If scan is canceled, returns -1"),
-            PaddingBodyText(text: "Click to start scanning BARCODE overlay:"),
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              child: RaisedButton(
-                color: Theme.of(context).primaryColor,
-                textColor: Theme.of(context).textTheme.bodyText2.color,
-                onPressed: () => _scan(ScanMode.BARCODE),
-                child: Text("Scan".toUpperCase()),
-              ),
+                    "Both scans read QR and Barcode. If scan is canceled, returns -1."),
+            PaddedBodyText(text: "Click to start scanning BARCODE overlay:"),
+            CustomRaisedButton(
+              text: "Scan",
+              icon: Icons.camera_alt,
+              onPressed: () => _scan(ScanMode.BARCODE),
             ),
-            PaddingBodyText(text: "Click to start scanning QRCODE overlay:"),
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              child: RaisedButton(
-                color: Theme.of(context).primaryColor,
-                textColor: Theme.of(context).textTheme.bodyText2.color,
-                onPressed: () => _scan(ScanMode.QR),
-                child: Text("Scan".toUpperCase()),
-              ),
+            PaddedBodyText(text: "Click to start scanning QRCODE overlay:"),
+            CustomRaisedButton(
+              text: "Scan",
+              icon: Icons.camera_alt,
+              onPressed: () => _scan(ScanMode.QR),
             ),
-            PaddingBodyText(text: "Raw Result:"),
-            PaddingBodyText(text: result),
+            PaddedBodyText(text: "Raw Result:"),
+            PaddedBodyText(text: result),
           ],
         ),
       ),

@@ -35,6 +35,11 @@ final ThemeData theme = ThemeData(
       fontSize: _fontSizeUnit * 4,
       fontWeight: FontWeight.bold,
     ),
+    headline3: TextStyle(
+      color: _darkPurple,
+      fontSize: _fontSizeUnit * 3,
+      fontWeight: FontWeight.bold,
+    ),
     headline6: TextStyle(
       color: _darkPurple,
       fontSize: _fontSizeUnit * 2.2,
