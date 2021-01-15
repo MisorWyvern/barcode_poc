@@ -46,7 +46,7 @@ class _MLScanPageState extends State<MLScanPage> {
               Divider(),
               PaddedBodyText(
                   text:
-                      "Take a photo and use Machine Learning Vision Detector to identify a barcode in the image file."),
+                      "Tire uma foto e o Machine Learning Vision Detector irá tentar identificar o barcode na imagem."),
               CustomRaisedButton(
                 text: "Scan ML Vision",
                 icon: Icons.camera_alt,
@@ -81,7 +81,9 @@ class _MLScanPageState extends State<MLScanPage> {
         await barcodeDetector.detectInImage(visionImage);
 
     //extrair o conteudo
+    setState(() {
     text = "";
+    });
     for (Barcode barcode in barcodes) {
       final String rawValue = barcode.rawValue;
       final BarcodeValueType valueType = barcode.valueType;

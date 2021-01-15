@@ -27,14 +27,14 @@ class _BCScanPageState extends State<BCScanPage> {
             Divider(),
             PaddedBodyText(
                 text:
-                    "Both scans read QRcodes and Barcodes. If scanning is canceled, returns -1."),
-            PaddedBodyText(text: "Click to start scanning BARCODE overlay:"),
+                    "Ambas os botões podem ler QRCodes e Barcodes. Se a leitura for cancelada, retorna -1."),
+            PaddedBodyText(text: "Clique para começar a leitura (BARCODE overlay)"),
             CustomRaisedButton(
               text: "Scan",
               icon: Icons.camera_alt,
               onPressed: () => _scan(ScanMode.BARCODE),
             ),
-            PaddedBodyText(text: "Click to start scanning QRCODE overlay:"),
+            PaddedBodyText(text: "Clique para começar a leitura (QRCODE overlay)"),
             CustomRaisedButton(
               text: "Scan",
               icon: Icons.camera_alt,

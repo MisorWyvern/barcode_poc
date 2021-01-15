@@ -37,7 +37,7 @@ class DashboardPage extends StatelessWidget {
             PaddedBodyText(
                 text: "Clique no botão \"ML Scan\" para testar a lib:"),
             Text(
-              "\"https://github.com/FirebaseExtended/flutterfire/tree/master/packages/firebase_ml_vision",
+              "\"https://pub.dev/packages/firebase_ml_vision\"",
               style: _theme.textTheme.headline6,
             ),
           ],
