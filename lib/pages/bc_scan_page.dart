@@ -50,7 +50,7 @@ class _BCScanPageState extends State<BCScanPage> {
 
   _scan(ScanMode scanMode) async {
     String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-        "#FF0000", "Cancelar", true, ScanMode.BARCODE);
+        "#FF0000", "Cancelar", true, scanMode);
 
     setState(() {
       result = barcodeScanRes;
