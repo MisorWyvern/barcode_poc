@@ -7,9 +7,18 @@ class MLScanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(
-        "MLSCANPAGE",
-        style: Theme.of(context).textTheme.bodyText1,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Text(
+                "MLSCANPAGE",
+                style: Theme.of(context).textTheme.bodyText1,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
