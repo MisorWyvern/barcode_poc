@@ -1,11 +1,15 @@
 # barcode_poc
 
-Uma POC para escanear códigos de barras. 
-A POC for scanning barcodes.
+Uma POC Flutter para escanear códigos de barras. 
+A Flutter POC for scanning barcodes.
 
 ## Screenshots
 
-
+![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png)
+![Dashboard Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot1.png)
+![BC Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot2.png)
+![ML Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot3.png)
+![Color Palette](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/color_palette.png)
 
 ## Packages / Pacotes
 
