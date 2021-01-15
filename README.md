@@ -1,16 +1,43 @@
 # barcode_poc
 
-A new Flutter project.
+Uma POC para escanear códigos de barras. 
+A POC for scanning barcodes.
 
-## Getting Started
+## Screenshots
+![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png)
+![ML Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot3.png)
+![BC Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot2.png)
+![Dashboard Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot1.png)
+![Color Palette](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/color_palette.png)
 
-This project is a starting point for a Flutter application.
+## Packages / Pacotes
 
-A few resources to get you started if this is your first Flutter project:
+### firebase_ml_vision
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+*You must also configure Firebase for each platform project: Android and iOS*
+```
+firebase_core: ^0.7.0
+firebase_ml_vision: ^0.10.0
+image_picker: ^0.6.7+21
+```
+[https://pub.dev/packages/firebase_core](https://pub.dev/packages/firebase_core)
+[https://pub.dev/packages/firebase_ml_vision](https://pub.dev/packages/firebase_ml_vision)
+[https://pub.dev/packages/image_picker](https://pub.dev/packages/image_picker)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### flutter_barcode_scanner
+
+```
+flutter_barcode_scanner: ^1.0.2
+```
+[https://pub.dev/packages/flutter_barcode_scanner](https://pub.dev/packages/flutter_barcode_scanner)
+
+### SVG
+
+```
+flutter_svg: ^0.19.0
+```
+[https://pub.dev/packages/flutter_svg](https://pub.dev/packages/flutter_svg)
+
+
+
+
