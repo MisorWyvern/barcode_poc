@@ -1,21 +1,22 @@
 # barcode_poc
 
-Uma POC Flutter para escanear códigos de barras. 
+Uma POC Flutter para escanear códigos de barras.<br/> 
 A Flutter POC for scanning barcodes.
 
 ## Screenshots
 
-![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png)
-![Dashboard Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot1.png)
-![BC Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot2.png)
-![ML Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot3.png)
+![SplashScreen Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot1.png)
+![Dashboard Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot2.png)
+<br/>
+![BC Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot3.png)
+![ML Scan Page](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/screenshot4.png)
 ![Color Palette](https://raw.githubusercontent.com/MisorWyvern/barcode_poc/master/assets/images/color_palette.png)
 
 ## Packages / Pacotes
 
 ### firebase_ml_vision
 
-*You must also configure Firebase for each platform project: Android and iOS*
+*You must also configure Firebase for each platform project: Android and iOS*<br/>
 *Você também deve configurar o Firebase para cada platiform project: Android e iOS*
 ```
 firebase_core: ^0.7.0
